@@ -19,11 +19,7 @@ class MP3Importer
     end
 
     def import
-        files.each do |normalized|
-            Song.new_by_filename(normalized)
-        end
-    
-    
+        files.each{|normalized| Song.new_by_filename(normalized)}
     end
 
 
